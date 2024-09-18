@@ -1,6 +1,14 @@
 import '../TelaHome/Body.css';
+import { useNavigate } from 'react-router-dom';
 
 function Body() {
+
+    const navigate = useNavigate();
+
+    function irParaCadastro() {
+        navigate('/cadastro'); 
+    }
+
     return (
         <div className="bodyContainer">
             <div className='mensagemHome'>
@@ -9,7 +17,8 @@ function Body() {
                 Conecte-se com profissionais qualificados para cuidar do seu lar com eficiência e confiança.</label>
                 <div className='buttonsHome'>
                     <button className='buttonHomeUm'>Trabalhe-conosco</button>
-                    <button className='buttonHomeDois'>Crie uma conta</button>
+                    <button onClick={irParaCadastro} className='buttonHomeDois'>Crie uma conta</button>
+
                 </div>
             </div>
            

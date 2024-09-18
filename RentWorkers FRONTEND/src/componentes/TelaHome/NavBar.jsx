@@ -15,7 +15,6 @@ function NavBar() {
           <p>Sobre nós</p>
           <p>Como funciona</p>
           <Link to="/login">Entrar</Link>
-          <Link to="/cadastro">Cadastro</Link>
 
         </div>
 

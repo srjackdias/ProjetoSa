@@ -5,6 +5,8 @@ import Body from './Body';
 
 
 function PaginaHome() {
+
+  
   return(
     <div className="containerHome">
       <NavBar />

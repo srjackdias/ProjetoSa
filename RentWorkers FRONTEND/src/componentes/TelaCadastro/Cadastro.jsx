@@ -9,7 +9,6 @@ function Cadastro() {
     function checkLoginCadastro(e) {
         if (email !== "" && senha !== "" && telefone !== "") {
             e.preventDefault();
-            // Lógica adicional aqui
         }
     }
 
