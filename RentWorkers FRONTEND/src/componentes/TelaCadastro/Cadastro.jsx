@@ -1,21 +1,52 @@
 import React, { useState } from 'react';
 import '../TelaCadastro/Cadastro.css';
+import { useNavigate } from 'react-router-dom';
 
 function Cadastro() {
     const [email, setEmailCadastro] = useState('');
     const [senha, setSenha] = useState('');
     const [telefone, setTelefone] = useState('');
+    const navigate = useNavigate(); 
 
     function checkLoginCadastro(e) {
+        e.preventDefault(); 
+
         if (email !== "" && senha !== "" && telefone !== "") {
-            e.preventDefault();
+            cadastrarUsuario(); 
+            
+        } else {
+            alert("Por favor, preencha todos os campos.");
         }
+    }
+
+    function cadastrarUsuario() {
+        let usuario = {
+            email: email,
+            senha: senha,
+            telefone: telefone,
+        };
+
+        const usuariosArmazenados = JSON.parse(localStorage.getItem('usuarios')) || [];
+
+        usuariosArmazenados.push(usuario);
+
+        localStorage.setItem('usuarios', JSON.stringify(usuariosArmazenados));
+
+        alert("Cadastro realizado com sucesso");
+
+        setEmailCadastro('');
+        setSenha('');
+        setTelefone('');
+
+        console.log(`Email: ${usuario.email}\nSenha: ${usuario.senha}\nTelefone: ${usuario.telefone}`);
+
+        navigate('/login'); 
     }
 
     return (
         <div className='containerCadastro'>
             <div className='divImagemCadastro'>
-                <img className='imgStyleCadastro' src='/images/empregados2.png' alt="Empregados"/>
+                <img className='imgStyleCadastro' src='/images/empregados2.png' alt="Empregados" />
             </div>
 
             <div className='divFormCadastro'>
@@ -43,7 +74,7 @@ function Cadastro() {
                         type='text'
                         value={telefone}
                         onChange={(e) => setTelefone(e.target.value)}
-                        placeholder="55"
+                        placeholder="Telefone"
                     />
 
                     <button className='buttonStyleCadastro' type='submit'>Cadastrar-se</button>
