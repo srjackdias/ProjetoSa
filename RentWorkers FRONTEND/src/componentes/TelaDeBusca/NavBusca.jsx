@@ -74,7 +74,16 @@ function NavBusca() {
     {
       id: Date.now() + 1,
       nome: "Marcia",
-      funcao: "Ze",
+      funcao: "Domestica",
+      localizacao: "Manaus",
+      imagemPerfil: "/images/download 8@2x.png"
+
+    },
+    
+    {
+      id: Date.now() + 1,
+      nome: "Rui costa",
+      funcao: "Programador",
       localizacao: "Manaus",
       imagemPerfil:  "/images/download 30.png"
 
@@ -82,26 +91,17 @@ function NavBusca() {
     
     {
       id: Date.now() + 1,
-      nome: "Marcia",
-      funcao: "Ze",
+      nome: "Luiz",
+      funcao: "Engenheiro",
       localizacao: "Manaus",
-      imagemPerfil:  "/images/download 30.png"
-
-    },
-    
-    {
-      id: Date.now() + 1,
-      nome: "Marcia",
-      funcao: "Ze",
-      localizacao: "Manaus",
-      imagemPerfil:  "/images/download 30.png"
+      imagemPerfil: "/images/download 8@2x.png"
 
     },
 
     {
       id: Date.now() + 1,
-      nome: "Marcia",
-      funcao: "Ze",
+      nome: "Matheus luiz",
+      funcao: "Professor ",
       localizacao: "Manaus",
       imagemPerfil:  "/images/download 30.png"
 
@@ -110,10 +110,10 @@ function NavBusca() {
     
     {
       id: Date.now() + 1,
-      nome: "Marcia",
-      funcao: "Ze",
+      nome: "Luiza",
+      funcao: "Recepcionista",
       localizacao: "Manaus",
-      imagemPerfil:  "/images/download 30.png"
+      imagemPerfil: "/images/download 8@2x.png"
 
     }
   ]);
