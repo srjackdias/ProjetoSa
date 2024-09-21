@@ -1,69 +1,130 @@
-.NavContainer{
-    display: flex;
-    flex-direction: row;
-    background-color: rgba(120, 208, 210, 1);
-    height: 15%;
-    width: 100%;
+.NavContainer {
+   display: flex;
+   flex-direction: row;
+   background-color: rgba(120, 208, 210, 1);
+   justify-content: space-around;
+   align-items: center;
+   height: 40%;
+   width: 100%;
+
 }
- .divLogo{
-    width: 25%;
-    height: 100%;
-    padding-left: 25px;
-    padding-top: 25px;
- }
- .imgLogo{
-    width: 200px;
-    height: 150px;
-    background-color: white;
-    border-radius: 500px;
- }
- 
- .divAreaNavegacao{
-    display: flex;
-    width: 75%;
-    height: 100%;
-    justify-content: first baseline;
-    align-items: self-end;
- }
- .divPainelNavegacao{
-    background-color: white;
-    width: 75%;
-    height: 60%;
-    border-radius: 25px 25px 0 0;
-    display: flex;
-    align-items: center;
-    padding-left: 25px;
- }
- .divSelectPainel{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    width: 15%;
-    height: 100%;
+
+.imgLogo {
+
+   width: 140px;
+   background-color: white;
+   height: 140px;
+   margin-left: 30px;
+   border-radius: 200px;
+
+}
+
+.imgPerfil {
+   width: 120px;
+
+
+
+}
+
+.divSelectPainel {
+
+   background-color: white;
+   width: 39%;
+   height: 48%;
+   margin-left: 65px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-direction: column;
+   border-top-left-radius: 10px;
+   border-bottom-left-radius: 10px;
+   border-left: 2px solid black;
+   border-top: 2px solid black;
+   border-bottom: 2px solid black;
+   flex-wrap: wrap;
    
- }
- .selectFiltro{
-    width: 100%;
-    height: 40%;
-    border-radius: 25px;
-    padding-left: 32px;
-    background-color: rgba(217, 217, 217, 1);
- }
- .divBuscaPainel{
-    width: 55%;
-    height: 75%;
-    display: flex;
-    justify-content: center;
-    align-items: self-end;
- }
- .inputStyle{
-    width: 60%;
-    height: 60%;
-    background-color: rgba(217, 217, 217, 1);
-    border-radius: 25px;
-    border-color: transparent;
-    padding-left: 25px;
-   
- }
+
+}
+
+.TituloUm {
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: normal; 
+   padding-right: 200px;
+}
+
+
+
+
+.selectFiltro {
+
+   width: 34%;
+   height: 30%;
+   border-radius: 25px;
+   padding-left: 32px;
+   background-color: white;
+   display: flex;
+   margin: auto;
+   font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.divSelectPainelDois {
+
+
+   background-color: white;
+   width: 40%;
+   height: 48%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-right: 100px;
+   border-top-right-radius: 100px;
+   border-bottom-right-radius: 100px;
+   border-top: 2px solid black;
+   border-bottom: 2px solid black;
+   border-right: 2px solid black;
+
+}
+
+.ordernarpow {
+   font-family: Arial, Helvetica, sans-serif;
+
+   font-weight: bold;
+   margin: 6px;
+}
+.cards {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   height: 100%;
+   gap: 20px;
+   justify-content: center;
+   background-color: rgba(120, 208, 210, 1);
+   padding: 40px;
+
+}
+
+
+.inputContainer {
+   position: relative;
+   display: flex;
+   align-items: center;
+}
+
+.inputStyle {
+   padding: 10px 40px 10px 20px;
+   border: 2px solid black;
+   border-radius: 4px;
+   width: 200px;
+   border-radius: 20px;
+   font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.btnBuscar {
+   position: absolute;
+   right: 5px;
+   background: transparent;
+   border: none;
+   cursor: pointer;
+}
