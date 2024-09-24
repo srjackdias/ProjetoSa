@@ -5,148 +5,47 @@ import IconBusca from './IconBusca';
 
 function NavBusca() {
   const [inputNome, setInputNome] = useState('');
-  const [dados, setDados] = useState([
-    {
-      id: Date.now(),
-      nome: "Marcos",
-      funcao: "Faxineiro",
-      localizacao: "Tapera",
-      imagemPerfil: "/images/download 30.png"
-
-    },
-    {
-      id: Date.now() + 1,
-      nome: "Loan",
-      funcao: "Porteiro",
-      localizacao: "Balneário",
-      imagemPerfil: "/images/download 8@2x.png"
-
-    },
-
-    {
-      id: Date.now() + 1,
-      nome: "Arthur",
-      funcao: "Pedreiro",
-      localizacao: "Ribeirao",
-      imagemPerfil: "/images/download 30.png"
-
-    },
-
-    
-    {
-      id: Date.now() + 1,
-      nome: "Flash",
-      funcao: "Estudante",
-      localizacao: "Manaus",
-      imagemPerfil: "/images/download 8@2x.png"
-
-    },
-
-    {
-      id: Date.now() + 1,
-      nome: "Isabela",
-      funcao: "Recepcionista",
-      localizacao: "Algum lugar",
-      imagemPerfil:  "/images/download 30.png"
-
-
-    },
-
-    {
-      id: Date.now() + 1,
-      nome: "Rosa",
-      funcao: "Faxineira",
-      localizacao: "Saco grande",
-      imagemPerfil: "/images/download 8@2x.png"
-
-    },
-
-    
-    {
-      id: Date.now() + 1,
-      nome: "Marcio",
-      funcao: "Copeiro",
-      localizacao: "Manaus",
-      imagemPerfil:  "/images/download 30.png"
-
-    },
-
-    {
-      id: Date.now() + 1,
-      nome: "Marcia",
-      funcao: "Domestica",
-      localizacao: "Manaus",
-      imagemPerfil: "/images/download 8@2x.png"
-
-    },
-    
-    {
-      id: Date.now() + 1,
-      nome: "Rui costa",
-      funcao: "Programador",
-      localizacao: "Manaus",
-      imagemPerfil:  "/images/download 30.png"
-
-    },
-    
-    {
-      id: Date.now() + 1,
-      nome: "Luiz",
-      funcao: "Engenheiro",
-      localizacao: "Manaus",
-      imagemPerfil: "/images/download 8@2x.png"
-
-    },
-
-    {
-      id: Date.now() + 1,
-      nome: "Matheus luiz",
-      funcao: "Professor ",
-      localizacao: "Manaus",
-      imagemPerfil:  "/images/download 30.png"
-
-    },
-
-    
-    {
-      id: Date.now() + 1,
-      nome: "Luiza",
-      funcao: "Recepcionista",
-      localizacao: "Manaus",
-      imagemPerfil: "/images/download 8@2x.png"
-
-    }
+  const [dados] = useState([
+    { id: 1, nome: "Marcos", funcao: "Faxineiro", localizacao: "Tapera", imagemPerfil: "/images/download 30.png" },
+    { id: 2, nome: "Loan", funcao: "Porteiro", localizacao: "Balneário", imagemPerfil: "/images/download 8@2x.png" },
+    { id: 3, nome: "Arthur", funcao: "Pedreiro", localizacao: "Ribeirao", imagemPerfil: "/images/download 30.png" },
+    { id: 4, nome: "Flash", funcao: "Estudante", localizacao: "Manaus", imagemPerfil: "/images/download 8@2x.png" },
+    { id: 5, nome: "Isabela", funcao: "Recepcionista", localizacao: "Algum lugar", imagemPerfil: "/images/download 30.png" },
+    { id: 6, nome: "Rosa", funcao: "Faxineira", localizacao: "Saco grande", imagemPerfil: "/images/download 8@2x.png" },
+    { id: 7, nome: "Marcio", funcao: "Copeiro", localizacao: "Manaus", imagemPerfil: "/images/download 30.png" },
+    { id: 8, nome: "Marcia", funcao: "Domestica", localizacao: "Manaus", imagemPerfil: "/images/download 8@2x.png" },
+    { id: 9, nome: "Rui Costa", funcao: "Programador", localizacao: "Manaus", imagemPerfil: "/images/download 30.png" },
+    { id: 10, nome: "Luiz", funcao: "Engenheiro", localizacao: "Manaus", imagemPerfil: "/images/download 8@2x.png" },
+    { id: 11, nome: "Matheus Luiz", funcao: "Professor", localizacao: "Manaus", imagemPerfil: "/images/download 30.png" },
+    { id: 12, nome: "Luiza", funcao: "Recepcionista", localizacao: "Manaus", imagemPerfil: "/images/download 8@2x.png" },
   ]);
 
-  // function BuscarTrabalhador() {
-    // let novoDado = {
-    //   id: Date.now(),
-    //   nome: inputNome,
-    //   funcao: "Função não especificada",
-    //   localizacao: "Localização não especificada"
-    // };
+  const [dadosFiltrados, setDadosFiltrados] = useState(dados);
 
-    // setDados([novoDado, ...dados]);
-  // }
-  
-  const [dadosFiltrados, setDadosFiltrados] = useState(dados); 
-
-  function BuscarTrabalhador() {
+  const BuscarTrabalhador = () => {
+    if (!inputNome.trim()) {
+      setDadosFiltrados(dados);
+      return;
+    }
     const filtrados = dados.filter(d => d.nome.toLowerCase().includes(inputNome.toLowerCase()));
     setDadosFiltrados(filtrados);
-  }
+  };
+
+  const handleKeyDown = (event) => {
+    if (event.key === 'Enter') {
+      BuscarTrabalhador();
+    }
+  };
 
   return (
     <>
       <div className='NavContainer'>
-        <img className='imgLogo' src='/images/LogoRentWorkers.png' />
+        <img className='imgLogo' src='/images/LogoRentWorkers.png' alt="Logo" />
 
         <div className='divSelectPainel'>
           <h1 className='TituloUm'>Inicio</h1>
-
           <label className='ordernarpow'>ORDENAR POR:</label>
-
-          <select className='selectFiltro' name=''>
+          <select className='selectFiltro'>
             <option value="">Nenhum</option>
             <option value=""></option>
           </select>
@@ -159,12 +58,13 @@ function NavBusca() {
               placeholder='Buscar'
               value={inputNome}
               onChange={(event) => setInputNome(event.target.value)}
+              onKeyDown={handleKeyDown}
             />
-            <button onClick={BuscarTrabalhador} className="btnBuscar">
+            <button onClick={BuscarTrabalhador} type="button" className="btnBuscar">
               <IconBusca style={{ width: '20px', height: '20px' }} />
             </button>
           </div>
-          <img className='imgPerfil' src='/images/download 46 (1).png' />
+          <img className='imgPerfil' src='/images/download 46 (1).png' alt="Perfil" />
         </div>
       </div>
 
