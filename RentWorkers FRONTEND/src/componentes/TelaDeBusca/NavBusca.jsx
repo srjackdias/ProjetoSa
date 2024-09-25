@@ -44,11 +44,18 @@ function NavBusca() {
 
         <div className='divSelectPainel'>
           <h1 className='TituloUm'>Inicio</h1>
-          <label className='ordernarpow'>ORDENAR POR:</label>
+        
+
+        <div className='divSelectPainelMeio'>
+
+        <label className='ordernarpow'>ORDENAR POR:</label>
           <select className='selectFiltro'>
             <option value="">Nenhum</option>
             <option value=""></option>
           </select>
+        </div>
+
+          
         </div>
 
         <div className='divSelectPainelDois'>
