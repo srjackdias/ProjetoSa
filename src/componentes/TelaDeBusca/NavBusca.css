@@ -2,7 +2,7 @@
    display: flex;
    flex-direction: row;
    background-color: rgba(120, 208, 210, 1);
-   justify-content: space-around;
+   justify-content: center;
    align-items: center;
    height: 40%;
    width: 100%;
@@ -14,7 +14,7 @@
    width: 140px;
    background-color: white;
    height: 140px;
-   margin-left: 30px;
+   margin-right: 20px;
    border-radius: 200px;
 
 }
@@ -29,27 +29,26 @@
 .divSelectPainel {
 
    background-color: white;
-   width: 40%;
-   height: 40%;
-   margin-left: 65px;
+   width: 25%;
+   height: 33%;
+   padding-left: 30px;
+
    display: flex;
+   justify-content: flex-start;
    align-items: center;
-   justify-content: space-between;
-   flex-direction: column;
+  
    border-top-left-radius: 10px;
    border-bottom-left-radius: 10px;
    border-left: 2px solid black;
    border-top: 2px solid black;
    border-bottom: 2px solid black;
-   flex-wrap: wrap;
    
 
 }
 
 .TituloUm {
    font-family: Arial, Helvetica, sans-serif;
-   font-weight: normal; 
-   padding-right: 200px;
+   font-weight: normal;
 }
 
 
@@ -57,26 +56,26 @@
 
 .selectFiltro {
 
-   padding: 10px 100px 10px 20px;
 
-   border-radius: 25px;
-   border:  2px solid black;
-   background-color: white;
-
+ 
+   border: 2px solid black;
+   border-radius: 4px;
+   width: 150px;
+   border-radius: 20px;
    font-family: Arial, Helvetica, sans-serif;
-
-} 
+}
 
 .divSelectPainelDois {
 
-
    background-color: white;
-   width: 40%;
-   height: 40%;
+
+   width: 33%;
+   height: 33%;
    display: flex;
    justify-content: space-between;
    align-items: center;
-   margin-right: 150px;
+   flex-direction: row;
+
    border-top-right-radius: 100px;
    border-bottom-right-radius: 100px;
    border-top: 2px solid black;
@@ -87,6 +86,7 @@
 
 .ordernarpow {
    font-family: Arial, Helvetica, sans-serif;
+
    font-weight: bold;
 }
 .cards {
@@ -102,29 +102,26 @@
 }
 
 .divSelectPainelMeio{
+   background-color: white;
 
-
-      background-color: white;
-      width: 50%;
-      height:80%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-}
-
-
-.inputContainer {
-   position: relative;
+   width: 20%;
+   height: 33%;
    display: flex;
-   align-items: center;
+   align-items: start;
+   justify-content: center;
+   flex-direction: column;
+   border-top: 2px solid black;
+   border-bottom: 2px solid black;
+
 }
+
+
 
 .inputStyle {
    padding: 10px 40px 10px 20px;
    border: 2px solid black;
    border-radius: 4px;
-   width: 200px;
+   width: 180px;
    border-radius: 20px;
    font-family: Arial, Helvetica, sans-serif;
 

@@ -5,6 +5,7 @@ import IconBusca from './IconBusca';
 
 function NavBusca() {
   const [inputNome, setInputNome] = useState('');
+  
   const [dados] = useState([
     { id: 1, nome: "Marcos", funcao: "Faxineiro", localizacao: "Tapera", imagemPerfil: "/images/download 30.png" },
     { id: 2, nome: "Loan", funcao: "Porteiro", localizacao: "Balneário", imagemPerfil: "/images/download 8@2x.png" },
@@ -14,10 +15,9 @@ function NavBusca() {
     { id: 6, nome: "Rosa", funcao: "Faxineira", localizacao: "Saco grande", imagemPerfil: "/images/download 8@2x.png" },
     { id: 7, nome: "Marcio", funcao: "Copeiro", localizacao: "Manaus", imagemPerfil: "/images/download 30.png" },
     { id: 8, nome: "Marcia", funcao: "Domestica", localizacao: "Manaus", imagemPerfil: "/images/download 8@2x.png" },
-    { id: 9, nome: "Rui Costa", funcao: "Programador", localizacao: "Manaus", imagemPerfil: "/images/download 30.png" },
-    { id: 10, nome: "Luiz", funcao: "Engenheiro", localizacao: "Manaus", imagemPerfil: "/images/download 8@2x.png" },
-    { id: 11, nome: "Matheus Luiz", funcao: "Professor", localizacao: "Manaus", imagemPerfil: "/images/download 30.png" },
-    { id: 12, nome: "Luiza", funcao: "Recepcionista", localizacao: "Manaus", imagemPerfil: "/images/download 8@2x.png" },
+    { id: 9, nome: "Rui Costa", funcao: "Programador", localizacao: "Florianopolis", imagemPerfil: "/images/download 30.png" },
+    { id: 10, nome: "Raisa Nascimento", funcao: "Psicologa", localizacao: "Manaus", imagemPerfil: "/images/download 8@2x.png"},
+
   ]);
 
   const [dadosFiltrados, setDadosFiltrados] = useState(dados);
@@ -44,33 +44,27 @@ function NavBusca() {
 
         <div className='divSelectPainel'>
           <h1 className='TituloUm'>Inicio</h1>
-        
+        </div>
 
         <div className='divSelectPainelMeio'>
-
-        <label className='ordernarpow'>ORDENAR POR:</label>
+          <label className='ordernarpow'>ORDENAR POR:</label>
           <select className='selectFiltro'>
             <option value="">Nenhum</option>
             <option value=""></option>
           </select>
         </div>
 
-          
-        </div>
-
         <div className='divSelectPainelDois'>
-          <div className='inputContainer'>
-            <input
-              className='inputStyle'
-              placeholder='Buscar'
-              value={inputNome}
-              onChange={(event) => setInputNome(event.target.value)}
-              onKeyDown={handleKeyDown}
-            />
-            <button onClick={BuscarTrabalhador} type="button" className="btnBuscar">
-              <IconBusca style={{ width: '20px', height: '20px' }} />
-            </button>
-          </div>
+          <input
+            className='inputStyle'
+            placeholder='Buscar'
+            value={inputNome}
+            onChange={(event) => setInputNome(event.target.value)}
+            onKeyDown={handleKeyDown}
+          />
+          <button onClick={BuscarTrabalhador} type="button" className="btnBuscar">
+            <IconBusca style={{ width: '20px', height: '20px' }} />
+          </button>
           <img className='imgPerfil' src='/images/download 46 (1).png' alt="Perfil" />
         </div>
       </div>
