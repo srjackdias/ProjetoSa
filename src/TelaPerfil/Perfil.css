@@ -1,0 +1,124 @@
+.container-Perfil{
+ background-color: aqua;
+ width: 100%;
+ height: 100%;
+ display: flex;
+ justify-content: flex-start;
+ align-items: center;
+
+    
+}
+
+
+.divPainel{
+background-color: white;
+width: 5%;
+height: 90%;
+margin-left: 5rem;
+
+}
+
+.divPerfil{
+background-color: white;
+width: 80%;
+height: 90%;
+margin-left: 5rem;
+border-bottom-right-radius: 40px;
+
+
+
+}
+
+.div-cima{
+
+    background-color: rgb(238, 223, 223);
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+    
+    
+
+}
+
+.fonteNome{
+
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 0px;
+    margin-top: 7rem;
+
+}
+
+
+.imgPerfilum{
+
+    padding-left: 80px;
+
+
+
+}
+
+.divPerfil-Esquerda{
+
+    background-color: white;
+    width:17%;
+    height: 75%;
+
+
+
+}
+
+.div-dados {
+    width: 100%;
+    height: 20%;
+    background-color: white;
+    /* border-bottom: 3px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+}
+
+
+.div-nota{
+
+    width: 100%;
+    height: 20%;
+    background-color: white;
+    /* border-bottom: 3px solid black; */
+
+    border: 2px solid black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.div-solicitacoes{
+
+
+    width: 100%;
+    height: 20%;
+    background-color: white;
+    /* border-bottom: 3px solid black; */
+
+    border: 2px solid black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+div-vazio{
+
+
+    
+}
