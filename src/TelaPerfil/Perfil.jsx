@@ -37,12 +37,49 @@ function Perfil() {
                     </div>
 
 
-                    
+
                     <div className='div-vazio'>
-                     
+
                     </div>
+
+                    <div className='div-Sair'>
+                        <p>Sair</p>
+
+
+                    </div>
+
+
                 </div>
 
+
+                <div className='div-meio'>
+                    <p className='fonteUm'>Email: jacklo@gmail.com</p>
+                    <p className='fonteDois'>CPF: 123.1235.552-55</p>
+                    <p className='fonteTres'>Telefone: +55 48 99152.5325</p>
+                    <p className='fonteQuadro'>Cep: 88725-095</p>
+
+                    <div className='div-botoes'>
+
+                        <button className='botaoSalvar'>Salvar</button>
+                        <button className='botaoInfo'>Editar Informações</button>
+
+
+                    </div>
+
+
+
+                    <div className='div-form'>
+
+                        <div className='div-formeio'>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                
             </div>
 
         </div>
