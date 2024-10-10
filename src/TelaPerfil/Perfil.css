@@ -15,6 +15,11 @@
     width: 5%;
     height: 90%;
     margin-left: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    gap: 25px;
 
 }
 
@@ -170,7 +175,7 @@
     align-items: center;
     flex-direction:column;
     flex-wrap: wrap;
-    gap: 55px;
+    gap: 40px;
     
 
 }
@@ -178,25 +183,29 @@
 
 .fonteUm, .fonteDois, .fonteTres, .fonteQuadro {
     font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: normal; /* Se desejar que todas as fontes sejam normais */
     line-height: 1; /* Remove o espaçamento entre as linhas */
     margin: 0; /* Remove as margens padrão */
     padding: 0; /* Remove qualquer preenchimento */
+    margin-top: 2rem;
 }
 
 
 .div-form{
 
     background-color:#e4f6f6;
-    width:25%;
-    height: 45%;
+    width:23%;
+    height: 46%;
     padding: 90px;
     border-bottom-right-radius: 40px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 11rem;
-    margin-left: 6rem;
+    align-items: start;
+    justify-content:center;
+   
+ 
+    margin-bottom: 16rem;
+    margin-left: 12rem;
 }
 
 
@@ -209,11 +218,12 @@
     display: flex;
     justify-content: space-around;
     align-items: end;
+
 }
 
 .botaoSalvar{
     width: 30%;
-    height: 50%;
+    height: 40%;
     padding: 20px;
     border-radius: 20px;
     font-size: 20px;
@@ -223,7 +233,7 @@
 .botaoInfo{
    
     width: 40%;
-    height: 50%;
+    height: 40%;
 
     padding: 20px;
     border-radius: 20px;
@@ -234,8 +244,38 @@
 .div-formeio{
 
 
-    padding: 180px;
+    padding: 40px;
     background-color: white;
     border-radius: 18px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+.imgPerfildois{
+
+    width: 250px;
+
+
+}
+
+.botaoExcluir{
+
+width: 50%;
+height: 40%;
+padding: 20px;
+border-radius: 10px;
+
+}
+
+.botaoAlterar{
+
+    width: 50%;
+    height: 40%;
+    padding: 20px;
+    border-radius: 10px;
 
 }

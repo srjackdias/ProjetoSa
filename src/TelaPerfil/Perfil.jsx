@@ -3,11 +3,15 @@ import React from 'react'
 
 import "../TelaPerfil/Perfil.css"
 
+import { Hamburger, Plus } from './IconPerfil';
+
+
 function Perfil() {
     return (
         <div className='container-Perfil'>
             <div className='divPainel'>
-
+                <Hamburger style={{ width: '30px', height: '30px',marginTop: '2rem'  }} />
+                <Plus style={{ width: '30px', height: '20px' }} />
 
 
 
@@ -71,6 +75,9 @@ function Perfil() {
                     <div className='div-form'>
 
                         <div className='div-formeio'>
+                        <img className='imgPerfildois' src='/images/download 46 (1).png' alt="Perfil" />
+                        <button className='botaoExcluir'>Excluir Foto</button>
+                        <button className='botaoAlterar'>Alterar Foto</button>
 
 
                         </div>
