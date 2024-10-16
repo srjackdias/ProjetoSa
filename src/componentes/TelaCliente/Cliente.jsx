@@ -62,8 +62,10 @@ const Cliente = () => {
 
                     <div className='div-Pedidos'>
                         <p className='FontePedido'>Pedidos de Trabalho</p>
+                        
 
                     </div>
+                    <hr/>
 
                     <div className='div-form-cliente'>
 
@@ -95,6 +97,7 @@ const Cliente = () => {
                         </div>
 
                         <div className='div-form-botoesDois'>
+                        <p className='fonteOferta'>Oferta: R$ 500,00</p>
 
 
                         </div>
@@ -103,7 +106,7 @@ const Cliente = () => {
 
                     </div>
 
-
+                <hr/>
 
 
                 </div>
