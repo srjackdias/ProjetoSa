@@ -1,20 +1,23 @@
 import React from 'react'
 
 
-import "../TelaPerfil/Perfil.css"
+import "./Perfil.css"
 
-import { Hamburger, Plus } from './IconPerfil';
+import { Hamburger, Plus,InformationSquare,OpenPadlock,Trash,Settings  } from './IconPerfil';
 
 
 function Perfil() {
     return (
         <div className='container-Perfil'>
             <div className='divPainel'>
-                <Hamburger style={{ width: '30px', height: '30px',marginTop: '2rem'  }} />
-                <Plus style={{ width: '30px', height: '20px' }} />
-
-
-
+                <Hamburger style={{ width: '50px', height: '60px',marginTop: '4rem'  }} />
+                <Plus style={{ width: '50px', height: '50px' }} />
+                <InformationSquare style={{ width: '50px', height: '60px' }} />
+            
+                <OpenPadlock style={{ width: '50px', height: '60px'}} />
+                <Trash style={{ width: '60px', height: '60px' }} />
+                <Settings  style={{ width: '60px', height: '60px' }} />
+ 
             </div>
 
             <div className='divPerfil'>
