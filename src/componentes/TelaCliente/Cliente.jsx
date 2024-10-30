@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import "./Cliente.css"
 
@@ -8,6 +8,20 @@ import "./Cliente.css"
 
 
 const Cliente = () => {
+    const [inputContaOferta, setInputContraOferta] = useState();
+
+
+    function enviarContraOferta() {
+
+
+
+        alert("Ola porra")
+
+
+    }
+
+
+
     return (
         <div className='Container-cliente'>
 
@@ -62,10 +76,10 @@ const Cliente = () => {
 
                     <div className='div-Pedidos'>
                         <p className='FontePedido'>Pedidos de Trabalho</p>
-                        
+
 
                     </div>
-                    <hr/>
+                    <hr />
 
                     <div className='div-form-cliente'>
 
@@ -97,7 +111,27 @@ const Cliente = () => {
                         </div>
 
                         <div className='div-form-botoesDois'>
-                        <p className='fonteOferta'>Oferta: R$ 500,00</p>
+
+                            <p className='fonteOferta'>Oferta R$:</p>
+
+                            <p className='fonteOContraferta'>ContraOferta R$:</p>
+
+
+
+
+
+                        </div>
+
+
+                        <div className='div-form-botoesTres'>
+
+                            <input className='inputLouco' type="Number"
+                                value={inputContaOferta}
+                                onChange={(event) => setInputContraOferta(event.target.value)}
+                            />
+
+
+                            <button onClick={enviarContraOferta} className='ButtonOferta'>Enviar</button>
 
 
                         </div>
@@ -106,7 +140,7 @@ const Cliente = () => {
 
                     </div>
 
-                <hr/>
+                    <hr />
 
 
                 </div>
